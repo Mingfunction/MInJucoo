@@ -1,0 +1,13 @@
+.label-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .8rem;
+    .label-list{
+        display: flex;
+        flex-direction: column;
+        .labelimg{
+            width: 1.36rem;
+            height: 1.36rem;
+        }
+    }
+}

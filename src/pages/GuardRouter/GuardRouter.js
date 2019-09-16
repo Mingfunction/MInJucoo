@@ -1,5 +1,5 @@
 //依赖
-import React, { Component , Fragment} from 'react';
+import React, { Component , Fragment } from 'react';
 import { Route, NavLink } from 'react-router-dom'
 // import axios from "axios"
 
@@ -7,7 +7,6 @@ import { Route, NavLink } from 'react-router-dom'
 import Teatre from '../Theatre/Teatre'
 import Myjucoo from '../Myjucoo/Myjucoo'
 import Home from '../Home/Home'
-
 // import Eticket from "../Eticket/Eticket"
 
 //加载的模块
@@ -15,22 +14,23 @@ import * as configure from '../../router/index'
 import "./GuardRouter.css"
 
 
+
+
 class GuardRouter extends Component {
     constructor() {
         super()
         this.state = {
             HomeNavList: configure.HomeNavList,
-            show: "none"
+            show: true
         }
     }
-
     render() {
         return (
             <Fragment>
                 <Route path={"/"} exact component={Home}></Route>
                 <Route path='/theatre/theatreList' component={Teatre}></Route>
                 <Route path='/myjuooo/myjuooo' component={Myjucoo}></Route>
-                <nav id="mian-nav" style={{ "display": this.show }}>
+                <nav id="mian-nav" style={{ display: this.state.show?"flex":"none" }}>
                     {
                         this.state.HomeNavList.map((v, k) => {
                             return (

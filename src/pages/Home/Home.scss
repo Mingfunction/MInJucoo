@@ -1,4 +1,20 @@
 #Home{
     width: 100%;
     height: 100%;
+    .showsLibrary{
+        width: 100%;
+        background: #000;
+    }
+    .advertion-wrap{
+        box-sizing: border-box;
+        width: 100%;
+        padding: .53333rem .4rem 0;
+        &::after {
+            content: "";
+            display: block;
+            clear: both;
+            height: 100%;
+
+        }
+    }
 }

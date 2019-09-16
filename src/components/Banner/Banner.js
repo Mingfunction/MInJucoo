@@ -7,41 +7,43 @@ import { Carousel } from 'antd-mobile';
 
 //模块
 import "./Banner.scss";
-import * as api from "../../api/index"
 
 class Banner extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            slide: [], //轮播数组
+            //轮播数组 设置长度，防止打开页面是没有长度不会自动轮播
+            // slide: new Array(2)
+            //slide: [],
+            autoplay: true
         }
     }
 
-    async componentDidMount() {
-        const data = await api.GetBanner()
-        console.log(data)
-        this.setState({
-            slide: data
-        })
-    }
-
     render() {
+        const slide = this.props.slide
         return (
-            <Carousel
-                autoplay={false}
-                infinite
-                className="banner-warp"
-            >
+            <>
                 {
-                    this.state.slide.map((val,k)=>{
-                        return(
-                            <div className="bannerItem" key={k}>
-                                <img src={val.image_url} alt=""/>
-                            </div>
-                        )
-                    })
+                    slide.length > 0 ? <Carousel
+                        autoplay={this.state.autoplay}
+                        autoplayInterval={1000}
+                        infinite
+                        className="banner-warp"
+                    >
+                        {
+                            slide.map((val, k) => {
+                                return (
+                                    <div className="bannerItem" key={k}>
+                                        <img src={val.image_url} alt="" />
+                                    </div>
+                                )
+                            })
+                        }
+                    </Carousel> : null
                 }
-            </Carousel>
+
+            </>
+
         );
     }
 }

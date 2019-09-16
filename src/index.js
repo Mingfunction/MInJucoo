@@ -10,11 +10,11 @@ import axios from 'axios'
 import * as serviceWorker from './serviceWorker';
 
 axios.interceptors.request.use(function(config){
-    console.log(config)
+    // console.log(config)
     return config
 })
 axios.interceptors.response.use(function({data}){
-    console.log(data)
+    // console.log(data)
     return data
 })
 

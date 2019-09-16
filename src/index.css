@@ -24,12 +24,13 @@ body{
 
 html,body,#root{
   width: 100%;
-  height: 100%;
+  height: 100%; 
 }
 a{outline-style:none;color:#333;text-decoration:none}
-p{
+p,h3{
   margin: 0;
   padding: 0;
 }
+
 /* 解决滑动报错问题 touch-action: pan-y;*/
 div { touch-action: pan-y; } 

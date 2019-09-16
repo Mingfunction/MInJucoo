@@ -1,8 +1,9 @@
 #mian-nav {
 	width: 100%;
 	height: 1.4rem;
-	position: absolute;
-	bottom: 0;
+	position: fixed;
+    bottom: 0;
+    background: #fefefe;
 	box-shadow: 0 0 2px #eeeeee;
     display: flex;
     justify-content: space-around;
@@ -68,14 +69,14 @@
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAMAAAANIilAAAAAS1BMVEUAAAA4NTU4NTU4NTU4NTU4NTU4NTU4NTU4NTU4NTU4NTU4NTU4NTU4NTU4NTU4NTU4NTU4NTU4NTU4NTU4NTU4NTU4NTU4NTU4NTV6K33hAAAAGHRSTlMAsEFw3PLRhDNmCa0UxfDGuo1iUEwvIG1UI89BAAAA5ElEQVRIx+3V626EIBCG4ZGiLKh7cE/v/V9p27Qp22bG2EyadBOefyJfMAIz0jRN89Nu7KniJNXMh37c6dmF7x6mTVSLui4QuyrJg/vnYAS0tUeo800JRmV4T5QNIntlFLot4Q7+NlzS/XfhWaoM+o7OaniAIX89vUBQJuX3Wcr4BeAwrYWnA8BFFOEIDMUOlwE4BtFdIyQ7nCBexXTr6YsVLm8vb7LiBMEKBzjJmjNkK5zh7Av7Ptv5w3xb5TokruPpuhiOK+ksBv+qhjlKr6/o13Zjs9uNLGyy2C3WVFts0zyFV7hJH05/U1+QAAAAAElFTkSuQmCC) no-repeat;
     background-size: cover;
 }
-.navItemLink .activeNav .iconeticket{
+/* .navItemLink .activeNav .iconeticket{
     color: red;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAMAAAArteDzAAACeVBMV…X0gcPwK4fLoXURMP+HH2RItMA1/nT0t36SovqpHvonP8d9B9mJ7zzB/5gRAAAAAElFTkSuQmCC) no-repeat 50%;
     background-size: cover;
     width: .8rem;
     height: .8rem;
     display: inline-block;
-}
+} */
 
 
 .navItemLink a .iconmyjuooo{
