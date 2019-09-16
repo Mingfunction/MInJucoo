@@ -1,0 +1,65 @@
+#home-header{
+    width: 100%;
+    height: 1.2rem;
+    padding: 0 .4rem;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    color: #fefefe;
+}
+.head-Address{
+    width: 1.56rem;
+    height: .74667rem;
+    border-radius: .46667rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color: rgba(0,0,0,.3);
+    border: 1px solid hsla(0,0%,88%,.3);
+    font: {
+        weight:600;
+        size: .4rem;
+    }
+}
+.icon-add{
+    width: .29333rem;
+    height: .34667rem;
+    display: inline-block;
+    background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAaCAMAAACEqFxyAAAAXVBMVEUAAAD+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7ro0NvAAAAHnRSTlMA+eslChdO2MS2h29oVjqAdu/e27qvpYxbQi0HAUsWcjORAAAAt0lEQVQoz2WR2Q6EMAhFEetarbuOy/D/nzkRadHxvBBOGugNcJG0IxLh2CagmCUiIVqMt3FGN7JYLNIDZG/krZKdc0p6UQIksq23ztle9iZgiZkMD5yIsVBwHYx8deC2AORagVBdnwFiNq83YkTHIZrojkvtdc1tBznX/LjsIS00IQFotsYPo8LtuysorJrpxXxeAP8t8i3W6GmjFZj2qRtNfKOCQKq3TNWq57hv/1GjXq3yRdQJP70QJWgxEHBwAAAAAElFTkSuQmCC");
+    background-size: cover;
+    margin-right: 2px;
+}
+.head-search{
+    width: 6.34667rem;
+    height: .74667rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    border: 1px solid hsla(0,0%,88%,.2);
+    background-color: rgba(0,0,0,.2);
+    border-radius: .53333rem;
+    margin-left: .10667rem;
+}
+.icon-search{
+    width: .53333rem;
+    height: .53333rem;
+    margin-left: .29333rem;
+    margin-right: .13333rem;
+    display: inline-block;
+    background:url("https://m.juooo.com/static/img/nav_icon_search.f194288.png");
+    background-size: cover;
+    margin-right: 2px;
+}
+.head-share{
+    width: .72rem;
+    height: .66667rem;
+    margin-left: .29333rem;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}

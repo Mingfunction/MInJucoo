@@ -1,0 +1,32 @@
+
+export const HomeNavList = [
+    {
+        path:"/",
+        navShow:true,
+        exact:true,
+        isAuthorization:true,
+        routerTitle:"首页",
+        SpanClass:"Home"
+    },{
+        path:"/theatre/theatreList",
+        navShow:true,
+        exact:true,
+        isAuthorization:true,
+        routerTitle:"剧院",
+        SpanClass:"theatre"
+    },{
+        path:"/eticket/mine",
+        navShow:false,
+        exact:true,
+        isAuthorization:true,
+        routerTitle:"票夹",
+        SpanClass:"eticket"
+    },{
+        path:"/myjuooo/myjuooo",
+        navShow:true,
+        exact:true,
+        isAuthorization:true,
+        routerTitle:"我的",
+        SpanClass:"myjuooo"
+    }
+]
