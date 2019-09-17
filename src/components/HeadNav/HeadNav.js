@@ -13,10 +13,24 @@ class HeadNav extends Component {
         console.log(this)
         this.props.history.push(page)
     }
-
+    handleScroll(event){
+        let scrollTop  = document.documentElement.scrollTop;
+        if(!this.refs.scroll){
+            return
+        }
+        if(scrollTop>10)
+            this.refs.scroll.className = "weite"
+        else{
+            this.refs.scroll.className = ""
+        }
+        
+    }
+    componentDidMount(){
+        window.addEventListener('scroll', this.handleScroll.bind(this));
+    }
     render() {
         return (
-            <header id="home-header">
+            <header id="home-header" ref="scroll">
                 <div className="head-Address" onClick={this.pushRoute.bind(this,"/index/selectCity")}>
                     <span className="icon-add"></span>
                     <span className="AddressTitle">全国</span>

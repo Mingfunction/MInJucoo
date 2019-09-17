@@ -1,5 +1,7 @@
 //依赖
-import React, { Component , Fragment } from 'react';
+import React, { Component , Fragment , 
+    // lazy , Suspense
+} from 'react';
 import { Route, NavLink } from 'react-router-dom'
 // import axios from "axios"
 
@@ -13,7 +15,9 @@ import Home from '../Home/Home'
 import * as configure from '../../router/index'
 import "./GuardRouter.css"
 
-
+// const Teatre = lazy(()=>import("../Theatre/Teatre"))
+// const Home = lazy(()=>import("../Home/Home"))
+// const Myjucoo = lazy(()=>import("../Myjucoo/Myjucoo"))
 
 
 class GuardRouter extends Component {
@@ -24,12 +28,15 @@ class GuardRouter extends Component {
             show: true
         }
     }
+  
     render() {
         return (
             <Fragment>
+                {/* <Suspense fallback={()=><div>111</div>}> */}
                 <Route path={"/"} exact component={Home}></Route>
                 <Route path='/theatre/theatreList' component={Teatre}></Route>
                 <Route path='/myjuooo/myjuooo' component={Myjucoo}></Route>
+                {/* </Suspense> */}
                 <nav id="mian-nav" style={{ display: this.state.show?"flex":"none" }}>
                     {
                         this.state.HomeNavList.map((v, k) => {

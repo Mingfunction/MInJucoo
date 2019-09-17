@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import {withRouter} from 'react-router-dom'
 import "./Labelitem.scss"
 
+
+
 class Labelitem extends Component {
     pushRoute(page){
         this.props.history.push(page.replace("https://m.juooo.com",""))

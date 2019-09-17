@@ -2,6 +2,8 @@ import React,{Component} from 'react';
 
 import { ListView } from 'antd-mobile';
 
+// import * as api from '../../api/index'
+
 const data = [
   {
     img: 'https://zos.alipayobjects.com/rmsportal/dKbkpPXKfvZzWCM.png',
@@ -53,7 +55,8 @@ class Teatre extends Component {
     }
   }
 
-  componentDidMount() {
+  async componentDidMount() {
+
     setTimeout(() => {
       this.rData = genData();
       console.log(this.rData)

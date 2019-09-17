@@ -1,6 +1,9 @@
+/*轮播图组件*/
 //依赖
 import React, { Component } from 'react';
 import { Carousel } from 'antd-mobile';
+
+
 
 //跳转模块
 
@@ -15,31 +18,29 @@ class Banner extends Component {
             //轮播数组 设置长度，防止打开页面是没有长度不会自动轮播
             // slide: new Array(2)
             //slide: [],
-            autoplay: true
         }
     }
 
     render() {
-        const slide = this.props.slide
+        const rotationData = this.props.rotationData;
+        const api = this.props.api;
+        //console.log(api)
         return (
             <>
                 {
-                    slide.length > 0 ? <Carousel
-                        autoplay={this.state.autoplay}
-                        autoplayInterval={1000}
-                        infinite
-                        className="banner-warp"
-                    >
-                        {
-                            slide.map((val, k) => {
-                                return (
-                                    <div className="bannerItem" key={k}>
-                                        <img src={val.image_url} alt="" />
-                                    </div>
-                                )
-                            })
-                        }
-                    </Carousel> : null
+                    rotationData.length > 0 ?
+                        <Carousel {...api}>
+                            {
+                                rotationData.map((val, k) => {
+                                    return (
+                                        <div className="bannerItem" key={k}>
+                                            <img src={val.image_url || val.pic} alt="" />
+                                        </div>
+                                    )
+                                })
+                            }
+                        </Carousel> 
+                    : null
                 }
 
             </>
