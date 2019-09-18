@@ -1,0 +1,175 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,dt,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+body{font:12px "微软雅黑";}
+a{text-decoration:none}
+em,i{font-style:normal}
+b,strong{font-weight:normal;}
+li{list-style:none}
+img{border:0;vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word}
+
+html,body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    width: 100%;
+}
+html{
+    font-size: 32px;
+}
+.mine{
+    height: 100%;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+.mine .mine-body{
+    padding-bottom: 1.6rem;
+}
+.mine .mine-body .mine-info{
+    background-image: url("../images/data_image_png;base….png");
+    background-repeat: no-repeat;
+    /*height: 5.58rem;*/
+    background-size: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.mine-info a .iconfont{
+    position: absolute;
+    right: .4rem;
+    top: .4rem;
+    font-size: .48rem;
+    color: #fefefe;
+}
+.min-info-main{
+    box-shadow: 0 0.05333rem 0.4rem 0.02667rem rgba(35,35,35,.08);
+    border-radius: .10667rem;
+    margin: 1.53333rem .4rem 0;
+    position: relative;
+    background: #fff;
+}
+.min-info-main-head{
+    padding: 0 .4rem;
+    position: relative;
+}
+.min-info-main-head-pic{
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    border: .02667rem solid #fff;
+    margin-top: -0.32rem;
+    margin-right: .26667rem;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+.min-info-main-head-pic img{
+    border: none;
+    border-color: transparent;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+.mine-info-main-head-name{
+    position: absolute;
+    top: .33333rem;
+    color: #232323;
+    font-size: .4rem;
+    font-weight: 700;
+}
+.mine-info-main-head-uid{
+    position: absolute;
+    color: #999;
+    font-size: .32rem;
+    bottom: 0;
+}
+.mine-info-main-label{
+    margin-top: -.09333rem;
+    overflow: hidden;
+}
+.mine-info-main-label p{
+    float: right;
+    font-size: .37333rem;
+    color: #454341;
+    font-weight: 700;
+    padding: .09333rem 0 .09333rem .38667rem;
+    background: linear-gradient(-45deg,#f5dea9,#f8d583);
+    border-radius: .36rem 0 0 .36rem;
+}
+.mine-info-main-cnt{
+    display: flex;
+    align-items: center;
+}
+.mine-info-main-cnt-item{
+    flex: 1;
+    text-align: center;
+    position: relative;
+    padding: .4rem 0 .52rem;
+    color: #666;
+    font-weight: 500;
+    font-size: .32rem;
+}
+.mine-info-main-cnt-item-num{
+    color:red;
+    font-size: 0.53rem;
+    margin-bottom: 0.2rem;
+}
+.separator{
+    position: absolute;
+    width: 1px;
+    height: 0.8rem;
+    background: #ebebeb;
+    top: .8rem;
+    right: 0;
+}
+.mine-info-main-cnt-plus{
+    flex: 1;
+    text-align: center;
+    position: relative;
+    padding: .4rem 0 .52rem;
+    color: #666;
+    font-weight: 500;
+    font-size: .32rem;
+}
+.mine-info-main-cnt-plus-no{
+    color: #232323;
+    font-size: .34667rem;
+}
+.mine-info-main-cnt-plus-name{
+    margin-top: 0.3rem;
+}
+.mine-vip{
+    display: block;
+}
+.mine-vip img{
+    display: block;
+    width: 9.86667rem;
+    height: 2.4rem;
+    margin: 0 auto;
+}
+.mine-setting{
+    padding: 0.4rem;
+}
+.mine-setting-list{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: .32rem;
+    background-color: #fff;
+    box-shadow: 0 0.05333rem 0.4rem 0.02667rem rgba(35,35,35,.08);
+    border-radius: .10667rem;
+}
+.mine-setting-list-item{
+    width: 25%;
+    text-align: center;
+    padding: .44rem 0 .53333rem;
+    font-size: .32rem;
+    color: #666;
+}
+.mine-setting-list img{
+    width: 1rem;
+    height: 1rem;
+}
+
+
+

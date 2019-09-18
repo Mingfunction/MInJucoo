@@ -1,0 +1,160 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,dt,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+h1,h2,h3,h4,h5,h6{font-weight: normal;}
+body{font:12px "微软雅黑";}
+a{text-decoration:none}
+em,i{font-style:normal}
+b,strong{font-weight:normal;}
+li{list-style:none}
+img{border:0;vertical-align:middle}
+table{border-collapse:collapse;border-spacing:0}
+p{word-wrap:break-word}
+
+html,body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 100%;
+    width: 100%;
+}
+html{
+    font-size: 32px;
+}
+body{
+    position: relative;
+    margin: 0 auto;
+    font-family: Arial, "微软雅黑", sans-serif;
+    font-size:0.16rem;
+    color: #666;
+    background-image: url(../images/login_bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+}
+.views{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+/*中*/
+.views .main {
+    position: relative;
+    padding: 1.87733rem 1.36533rem 0;
+    height: 11.41867rem;
+}
+/*.views .login-wrap {*/
+    /*padding-top: 2rem;*/
+/*}*/
+.views .login-wrap .login-title {
+    text-align: center;
+}
+.views .login-wrap .title {
+    height: 0.6rem;
+    font-size:0.6rem;
+    font-weight: 700;
+    font-stretch: normal;
+    line-height: 0.6rem;
+    color: #232323;
+}
+.views .login-area {
+    margin-top: 1.5rem;
+}
+.views .login-area .lg-list {
+    padding-bottom: 0.64rem;
+}
+.views .binded-iphone .login-area .lg-item {
+    padding: 0.53333rem 0;
+    /*margin-bottom: 0.42667rem;*/
+}
+.views .login-area .lg-list .lg-item {
+    list-style: none;
+    width: 100%;
+    border-bottom: 0.02133rem solid #666;
+    font-size: 0.4rem;
+    color: #232323;
+    line-height: 0.3rem;
+    /*padding-bottom: 0.74667rem;*/
+}
+.views .login-area .lg-list .lg-item .lg-input {
+    width: 9.6rem;
+    height: 0.5rem;
+    font-size: 0.4rem;
+    border: none;
+    background-color: #fdfdfd;
+}
+/*登录*/
+.views .login-btn {
+    padding-top: 0.9rem;
+}
+.views .login-btn .btn {
+    display: block;
+    width: 100%;
+    height: 1.3rem;
+    line-height: 1.3rem;
+    font-size:0.5rem;
+    color: #fefefe;
+    border-radius: 1.28rem;
+    background-color: #ebebeb;
+    border: none;
+    text-align: center;
+}
+.views .login-toggle {
+    margin-top: 0.6rem;
+}
+.views .login-toggle .tg-wrap {
+    overflow: hidden;
+}
+.views .login-toggle .tg-wrap .left {
+    float: left;
+}
+.views .login-toggle .tg-wrap .right {
+    float: right;
+}
+.views .login-toggle .tg-wrap span {
+    font-size: 0.4rem;
+    color: #232323;
+}
+/*其他登录方式*/
+.views .footer-wrap {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    position: relative;
+    bottom: 0.3rem;
+}
+.views .footer-wrap .footer-title {
+    position: relative;
+    height: 1.32267rem;
+    border-top: 1px solid #999999;
+    padding-left: 1.5rem;
+}
+.views .footer-wrap .footer-title .footer-title-txt {
+    position: absolute;
+    left: 50%;
+    padding: 0 0.42667rem;
+    font-size: 0.4rem;
+    color: #999999;
+    height: 1.06667rem;
+    line-height: 1.06667rem;
+    background-color: #FEFEFE;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+}
+.views .footer-wrap .footer-inner {
+    display: flex;
+    margin-top: -0.5rem;
+}
+.views .footer-wrap .footer-inner .item {
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+}
+.views .footer-wrap .footer-inner .img-media {
+    display: block;
+    height: 3rem;
+}
+.views .footer-wrap .footer-inner img {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
