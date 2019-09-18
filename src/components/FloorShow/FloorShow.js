@@ -4,10 +4,10 @@ import React, { Component } from 'react';
 import {Link} from 'react-router-dom'
 
 // 加载模块
-import HotBanner from '../HotBanner/HotBanner'
-import "./HotRecommend.scss"
+import BannerList from '../BannerList/BannerList'
+import "./FloorShow.scss"
 
-class HotRecommend extends Component {
+class FloorShow extends Component {
     constructor(props){
         super(props)
         this.state = {
@@ -18,27 +18,26 @@ class HotRecommend extends Component {
     }
     render() {
         // const bannerset = this.state.bannerset
-        const HotRecommendData = this.props.HotRecommendData
-        HotRecommendData.more_url = HotRecommendData.more_url?HotRecommendData.more_url.replace("https://m.juooo.com",""):HotRecommendData.more_url
-        console.log(HotRecommendData)
+        const FloorShow = this.props.FloorShowData
+        // console.log(FloorShow)
         
         return (
-            HotRecommendData.more_url?
+            FloorShow.search_url?
                 <div className={"hot-recommend"}>
                     <div className="list-title">
-                        <h3>热门演出</h3>
-                        <Link className={"link-to"} to={HotRecommendData.more_url}>
+                        <h3>{FloorShow.title}</h3>
+                        <Link className={"link-to"} to={FloorShow.search_url.replace("https://m.juooo.com","")}>
                             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoBAMAAAB+0KVeAAAALVBMVEUAAABmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmaTgChpAAAAD3RSTlMA/Aa1qrzcwa+ezcijk5JAYXVXAAAAVUlEQVQoz2MYtoDNAIsghzA2pYEOWASZRbApNWzAIqiKTSlT4QEsouqS2JQGXsAiqpVApCDTxgeYgtoy2OyZQJyLmAqxhAirBLbwcCAy5NgaGIYzAADnxQppL/x7ngAAAABJRU5ErkJggg==" alt=""/>
                         </Link>
                     </div>
-                    <HotBanner 
-                        accept={HotRecommendData.hots_show_list}
+                    <BannerList 
+                        accept={FloorShow.list}
                         setStyle={this.state.bannerset}
-                    ></HotBanner>
+                    ></BannerList>
                 </div>
             :null
         );
     }
 }
 
-export default HotRecommend;
+export default FloorShow;

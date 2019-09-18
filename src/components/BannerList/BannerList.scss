@@ -1,0 +1,46 @@
+.BannerList {
+    .swiper-slide {
+        .img-warp {
+            width: 2.85333rem;
+            height: 3.89333rem;
+            border-radius: .10667rem;
+            overflow: hidden;
+            border: 1px solid #ebebeb;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        h3 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 100%;
+            height: .66667rem;
+            line-height: .66667rem;
+            font-size: .45333rem;
+            color: #232323;
+            margin-top: .26667rem;
+        }
+
+        p {
+            text-align: left;
+
+            span {
+                font-size: .42667rem;
+                letter-spacing: 0;
+                margin-right: .13333rem;
+                font-weight: 400;
+                color: #ff6743 !important;
+            }
+        }
+
+        em {
+            font-size: .29333rem;
+            color: #999;
+            font-style: initial
+        }
+    }
+}

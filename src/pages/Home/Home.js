@@ -12,6 +12,7 @@ import Operation from '../../components/Operation/Operation'
 import Vipbanner from "../../components/Vipbanner/Vipbanner"
 import TourShow from "../../components/TourShow/TourShow"
 import HotRecommend from "../../components/HotRecommend/HotRecommend"
+import FloorShow from "../../components/FloorShow/FloorShow"
 import "./Home.scss"
 
 class Home extends Component {
@@ -22,20 +23,23 @@ class Home extends Component {
                 slide_list: [],
             },
             HotRecommend:{},
+            FloorShowData:[],
             mainBanner: {
                 autoplay:true,
                 autoplayInterval:1000,
                 infinite:true,
                 className:"banner-warp",
-            }
+            },
+            
         }
     }
     async componentDidMount() {
         let data = await api()
-        //console.log(data)
+        console.log(data)
         this.setState({
             homeData: Object.assign(data[0], data[1]),
             HotRecommend:data[2],
+            FloorShowData:data[3]
         })
     }
     //加上这一步，不会内存泄漏报错
@@ -49,7 +53,8 @@ class Home extends Component {
         const homeData = this.state.homeData;
         const mainBanner = this.state.mainBanner;
         const HotRecommendData = this.state.HotRecommend;
-        //console.log(homeData)
+        const FloorShowData  =this.state.FloorShowData;
+        console.log(FloorShowData)
         return (
             <div id="Home">
                 <HeadNav></HeadNav>
@@ -60,6 +65,13 @@ class Home extends Component {
                     <Operation operation={homeData.operation_list}></Operation>
                     <TourShow></TourShow>
                     <HotRecommend HotRecommendData={HotRecommendData}></HotRecommend>
+                    {
+                        FloorShowData.map((v,k)=>{
+                            return(
+                                <FloorShow key={k} FloorShowData={v}></FloorShow>
+                            )
+                        })
+                    }
                     <div className={"height"}></div>
                 </section>
             </div>

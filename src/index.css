@@ -33,4 +33,4 @@ p,h3{
 }
 
 /* 解决滑动报错问题 touch-action: pan-y;*/
-div { touch-action: pan-y; } 
+div { touch-action: none; } 

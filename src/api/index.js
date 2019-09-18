@@ -24,13 +24,23 @@ let getVipHomeSchedular = new Promise( async (resolve, reject) => {
     // console.log(data)
     resolve(data.data)
 })
-//https://api.juooo.com/home/index/getHotsRecommendList?city_id=0&version=6.0.5&referer=2
+// https://api.juooo.com/home/index/getHotsRecommendList?city_id=0&version=6.0.5&referer=2
 let getHotsRecommendList = new Promise( async (resolve, reject) => {
     const {data} = await axios.get("/jucoo/home/index/getHotsRecommendList?city_id=0&version=6.0.5&referer=2")
     // console.log(data)
     resolve(data.data)
 })
-
+// https://api.juooo.com/home/index/getFloorShow?city_id=0&version=6.0.5&referer=2
+let getFloorShow = new Promise( async (resolve, reject) => {
+    const {data} = await axios.get("/jucoo/home/index/getFloorShow?city_id=0&version=6.0.5&referer=2")
+    // console.log(data)
+    resolve(data.data)
+})
 export default function all(){
-    return Promise.all( [getClassifyHome,getVipHomeSchedular,getHotsRecommendList] )
+    return Promise.all( [
+        getClassifyHome,
+        getVipHomeSchedular,
+        getHotsRecommendList,
+        getFloorShow
+    ] )
 }

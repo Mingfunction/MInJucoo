@@ -85,7 +85,7 @@ page
     > 路由 theatre/index(tid{})
 }
 
-> 票价：{
+> 票夹eticket/list：{
     暂时不知道有票时的样式，
 }
 
